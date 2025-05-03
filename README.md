@@ -1,5 +1,4 @@
-# neirona-bot
-Нейрона — умный и дружелюбный цифровой собimport openai
+import openai
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
@@ -30,6 +29,5 @@ if __name__ == '__main__':
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.run_polling()
-еседник, созданный для того, чтобы упростить общение, автоматизировать ответы и помогать людям 24/7. Она легко интегрируется в сайты, мессенджеры или бизнес-платформы и может быть настроена под любую сферу: от клиентского сервиса до образовательных проектов.
 python-telegram-bot==20.0
 openai
